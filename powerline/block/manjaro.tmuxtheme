@@ -1,7 +1,7 @@
 #
-# Powerline Manjaro Double - Tmux Theme
+# Powerline Manjaro Block - Tmux Theme
 #
-# Inspired by Blue Double by Jim Myhrberg <contact@jimeh.me>.
+# Inspired by Blue Block by Jim Myhrberg <contact@jimeh.me>.
 # Inspired by vim-powerline: https://github.com/Lokaltog/powerline
 #
 # Requires terminal to be using a powerline compatible font, find one here:
@@ -12,7 +12,7 @@
 set -g status-interval 1
 
 # Basic status bar colors
-set -g status-fg colour238
+set -g status-fg colour240
 set -g status-bg colour233
 
 # Left side of status bar
@@ -25,18 +25,18 @@ set -g status-left "#[fg=colour232,bg=colour43,bold] #S #[fg=colour43,bg=colour2
 set -g status-right-bg colour233
 set -g status-right-fg colour243
 set -g status-right-length 150
-set -g status-right "#[fg=colour235,bg=colour233]#[fg=colour240,bg=colour235] %H:%M:%S #[fg=colour240,bg=colour235]#[fg=colour233,bg=colour240] %d-%b-%y #[fg=colour43,bg=colour240]#[fg=colour232,bg=colour43,bold] #H "
+set -g status-right "#[fg=colour235,bg=colour233]#[fg=colour240,bg=colour235] %H:%M:%S #[fg=colour240,bg=colour235]#[fg=colour233,bg=colour240] %d-%b-%y #[fg=colour245,bg=colour240]#[fg=colour232,bg=colour245,bold] #H "
 
 # Window status
-set -g window-status-format "  #I:#W#F  "
-set -g window-status-current-format "#[fg=colour233,bg=black]#[fg=colour43,nobold] #I:#W#F #[fg=colour233,bg=black,nobold]"
+set -g window-status-format " #I:#W#F "
+set -g window-status-current-format " #I:#W#F "
 
 # Current window status
 set -g window-status-current-bg colour43
-set -g window-status-current-fg colour233
+set -g window-status-current-fg colour232
 
 # Window with activity status
-set -g window-status-activity-bg colour245 # fg and bg are flipped here due to
+set -g window-status-activity-bg colour31  # fg and bg are flipped here due to
 set -g window-status-activity-fg colour233 # a bug in tmux
 
 # Window separator
